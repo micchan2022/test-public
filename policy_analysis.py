@@ -104,8 +104,8 @@ while True:
 print()
 
 req_payload = {
-    "t0": "{}-{}-{}T{}:00:00+0900".format(SY, SM, SD, SH),
-    "t1": "{}-{}-{}T{}:00:00+0900".format(EY, EM, ED, EH),
+    "t0": "{}-{}-{}T{}:00:00+0000".format(SY, SM, SD, SH),
+    "t1": "{}-{}-{}T{}:00:00+0000".format(EY, EM, ED, EH),
     "limit": 10,
     "filter": {
                 "type": "eq",
@@ -163,8 +163,8 @@ while True:
         sys.exit()
     else:
         req_payload = {
-            "t0": "{}-{}-{}T{}:00:00+0900".format(SY, SM, SD, SH),
-            "t1": "{}-{}-{}T{}:00:00+0900".format(EY, EM, ED, EH),
+            "t0": "{}-{}-{}T{}:00:00+0000".format(SY, SM, SD, SH),
+            "t1": "{}-{}-{}T{}:00:00+0000".format(EY, EM, ED, EH),
             "limit": 10,
             "filter": {
                 "type": "eq",
