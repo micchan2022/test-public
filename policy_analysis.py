@@ -7,7 +7,7 @@ import requests.packages.urllib3
 
 requests.packages.urllib3.disable_warnings()
 
-API_ENDPOINT="https://{Your cluster's ip}"
+API_ENDPOINT="https://{Your cluster's ip or FQDN}"
 
 rc = RestClient(API_ENDPOINT,credentials_file='credentials.json', verify=False)
 
